@@ -1,7 +1,7 @@
 const ADMIN = { user: "admin", pass: "admin123" };
 const USER  = { user: "user",  pass: "user123" };
 
-const DATA_URL = "https://YOUR-USERNAME.github.io/YOUR-REPO/data.json";
+const DATA_URL = "https://vasanth-2025-dot.github.io/siva/data.json";
 
 function login() {
   const u = document.getElementById("username").value;
