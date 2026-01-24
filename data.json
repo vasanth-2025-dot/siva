@@ -1,26 +1,16 @@
 {
-  "folders": [
+  "files": [
     {
-      "name": "Notes",
-      "files": [
-        {
-          "name": "Math PDF",
-          "url": "https://example.com/math.pdf"
-        },
-        {
-          "name": "Science Video",
-          "url": "https://example.com/science.mp4"
-        }
-      ]
+      "name": "Google",
+      "url": "https://www.google.com"
     },
     {
-      "name": "Projects",
-      "files": [
-        {
-          "name": "Youtube link",
-          "url": "https://youtu.be/AbKB9JZnFWM?si=7PBylgqLi4Kb-bEL"
-        }
-      ]
+      "name": "YouTube",
+      "url": "https://www.youtube.com"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com"
     }
   ]
 }
