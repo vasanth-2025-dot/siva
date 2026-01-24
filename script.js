@@ -40,3 +40,22 @@ async function loadData() {
     foldersDiv.innerHTML += html;
   });
 }
+
+function detectDevice() {
+  const width = window.innerWidth;
+  const body = document.body;
+
+  body.classList.remove("mobile", "tablet", "desktop");
+
+  if (width <= 600) {
+    body.classList.add("mobile");
+  } else if (width <= 1024) {
+    body.classList.add("tablet");
+  } else {
+    body.classList.add("desktop");
+  }
+}
+
+window.addEventListener("load", detectDevice);
+window.addEventListener("resize", detectDevice);
+
