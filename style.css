@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   color: orange;
 }
 
@@ -10,46 +10,88 @@ body {
   background-image: url("https://image2url.com/r2/default/images/1769278932391-77dd394f-45ac-4cd6-ac49-7c7d34430f1d.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+
+  /* Center content for all screens */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
 }
 
+/* Buttons */
 button {
   background: green;
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 20px;
+  padding: 12px 24px;
+  border-radius: 25px;
   cursor: pointer;
+  width: 100%;
+  max-width: 250px;
+  margin-top: 10px;
 }
 
+/* Inputs */
 input {
-  padding: 10px;
-  margin: 5px;
-  width: 90%;
+  padding: 12px;
+  margin: 8px 0;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  outline: none;
 }
 
+/* Login box */
 .login-box {
-  max-width: 300px;
-  margin: 120px auto;
-  background: rgba(0,0,0,0.6);
-  padding: 20px;
-  border-radius: 15px;
+  width: 100%;
+  max-width: 350px;
+  background: rgba(0,0,0,0.65);
+  padding: 25px;
+  border-radius: 18px;
   text-align: center;
 }
 
+/* Folder container */
 .folder {
+  width: 100%;
+  max-width: 900px;
   background: rgba(0,0,0,0.6);
-  margin: 15px;
-  padding: 15px;
-  border-radius: 12px;
+  margin: 10px auto;
+  padding: 18px;
+  border-radius: 14px;
 }
 
+/* Links */
 a {
   color: orange;
   text-decoration: none;
+  word-break: break-word;
 }
 
-@media (max-width: 600px) {
-  input, button {
-    width: 100%;
+/* ---------- TABLET SUPPORT ---------- */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .login-box {
+    max-width: 420px;
+  }
+
+  button {
+    max-width: 280px;
   }
 }
+
+/* ---------- DESKTOP SUPPORT ---------- */
+@media (min-width: 1025px) {
+  body {
+    padding: 40px;
+  }
+
+  .login-box {
+    max-width: 400px;
+  }
+
+  .folder {
+    max-width: 1000px;
+  }
+}
+
