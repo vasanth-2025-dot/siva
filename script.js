@@ -17,37 +17,37 @@ function login() {
   }
 }
 
-const container = document.getElementById("filesContainer");
-container.innerHTML = "";
-
-data.files.forEach(file => {
-  const div = document.createElement("div");
-  div.className = "file-box";
-
-  div.innerHTML = `
-    <h3>${file.name}</h3>
-    <a href="${file.url}" target="_blank">Open</a>
-  `;
-
-  container.appendChild(div);
-});
-
-
+/* DEVICE DETECTION */
 function detectDevice() {
-  const width = window.innerWidth;
-  const body = document.body;
+  const w = window.innerWidth;
+  document.body.classList.remove("mobile", "tablet", "desktop");
 
-  body.classList.remove("mobile", "tablet", "desktop");
-
-  if (width <= 600) {
-    body.classList.add("mobile");
-  } else if (width <= 1024) {
-    body.classList.add("tablet");
-  } else {
-    body.classList.add("desktop");
-  }
+  if (w <= 600) document.body.classList.add("mobile");
+  else if (w <= 1024) document.body.classList.add("tablet");
+  else document.body.classList.add("desktop");
 }
 
 window.addEventListener("load", detectDevice);
 window.addEventListener("resize", detectDevice);
+
+/* LOAD FILES */
+if (window.location.pathname.includes("dashboard.html")) {
+  fetch("data.json")
+    .then(res => res.json())
+    .then(data => {
+      const container = document.getElementById("filesContainer");
+      container.innerHTML = "";
+
+      data.files.forEach(file => {
+        const box = document.createElement("div");
+        box.className = "file-box";
+        box.innerHTML = `
+          <h3>${file.name}</h3>
+          <a href="${file.url}" target="_blank">Open</a>
+        `;
+        container.appendChild(box);
+      });
+    });
+}
+
 
