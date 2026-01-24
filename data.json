@@ -1,0 +1,26 @@
+{
+  "folders": [
+    {
+      "name": "Notes",
+      "files": [
+        {
+          "name": "Math PDF",
+          "url": "https://example.com/math.pdf"
+        },
+        {
+          "name": "Science Video",
+          "url": "https://example.com/science.mp4"
+        }
+      ]
+    },
+    {
+      "name": "Projects",
+      "files": [
+        {
+          "name": "GitHub Repo",
+          "url": "https://github.com/"
+        }
+      ]
+    }
+  ]
+}
