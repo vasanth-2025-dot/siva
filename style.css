@@ -12,86 +12,88 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 
-  /* Center content for all screens */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 2vw;
 }
 
-/* Buttons */
+/* COMMON UI */
 button {
   background: green;
   color: white;
   border: none;
-  padding: 12px 24px;
+  padding: 1em 2em;
   border-radius: 25px;
   cursor: pointer;
-  width: 100%;
-  max-width: 250px;
-  margin-top: 10px;
+  font-size: 1rem;
 }
 
-/* Inputs */
 input {
-  padding: 12px;
-  margin: 8px 0;
+  padding: 1em;
   width: 100%;
-  border-radius: 8px;
+  margin: 0.5em 0;
+  border-radius: 10px;
   border: none;
-  outline: none;
+  font-size: 1rem;
 }
 
-/* Login box */
 .login-box {
   width: 100%;
-  max-width: 350px;
+  max-width: 420px;
   background: rgba(0,0,0,0.65);
-  padding: 25px;
-  border-radius: 18px;
+  padding: 2em;
+  border-radius: 20px;
   text-align: center;
 }
 
-/* Folder container */
+/* FILE / FOLDER */
 .folder {
   width: 100%;
-  max-width: 900px;
   background: rgba(0,0,0,0.6);
-  margin: 10px auto;
-  padding: 18px;
-  border-radius: 14px;
+  margin: 1em 0;
+  padding: 1.2em;
+  border-radius: 15px;
 }
 
-/* Links */
 a {
   color: orange;
   text-decoration: none;
   word-break: break-word;
 }
 
-/* ---------- TABLET SUPPORT ---------- */
-@media (min-width: 600px) and (max-width: 1024px) {
-  .login-box {
-    max-width: 420px;
-  }
+/* ================= DEVICE AUTO ADAPT ================= */
 
-  button {
-    max-width: 280px;
-  }
+/* 📱 MOBILE */
+body.mobile .login-box {
+  max-width: 100%;
+  padding: 1.5em;
 }
 
-/* ---------- DESKTOP SUPPORT ---------- */
-@media (min-width: 1025px) {
-  body {
-    padding: 40px;
-  }
-
-  .login-box {
-    max-width: 400px;
-  }
-
-  .folder {
-    max-width: 1000px;
-  }
+body.mobile button {
+  width: 100%;
+  font-size: 1.1rem;
 }
 
+/* 📲 TABLET */
+body.tablet .login-box {
+  max-width: 500px;
+}
+
+body.tablet .folder {
+  padding: 1.5em;
+}
+
+/* 💻 DESKTOP */
+body.desktop {
+  padding: 3vw;
+}
+
+body.desktop .login-box {
+  max-width: 450px;
+}
+
+body.desktop .folder {
+  max-width: 1000px;
+  margin: 1em auto;
+}
