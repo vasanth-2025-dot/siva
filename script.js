@@ -17,29 +17,21 @@ function login() {
   }
 }
 
-async function loadData() {
-  const res = await fetch(DATA_URL);
-  const data = await res.json();
+const container = document.getElementById("filesContainer");
+container.innerHTML = "";
 
-  const foldersDiv = document.getElementById("folders");
-  foldersDiv.innerHTML = "";
+data.files.forEach(file => {
+  const div = document.createElement("div");
+  div.className = "file-box";
 
-  data.folders.forEach(folder => {
-    let html = `<div class="folder">
-      <h3>${folder.name}</h3>
-      <ul>`;
+  div.innerHTML = `
+    <h3>${file.name}</h3>
+    <a href="${file.url}" target="_blank">Open</a>
+  `;
 
-    folder.files.forEach(file => {
-      html += `
-        <li>
-          <a href="${file.url}" target="_blank">${file.name}</a>
-        </li>`;
-    });
+  container.appendChild(div);
+});
 
-    html += `</ul></div>`;
-    foldersDiv.innerHTML += html;
-  });
-}
 
 function detectDevice() {
   const width = window.innerWidth;
