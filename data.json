@@ -1,38 +1,34 @@
 {
   "files": [
     {
-      "name": "another web",
-      "url": "https://vasanth-2025-dot.github.io/rulesbreak"
+      "name": "Movies",
+      "url": "https://vasanth-2025-dot.github.io/movie"
     },
     {
-      "name": "status",
-      "url": "https://github.com/vasanth-2025-dot/video-storage-/releases/download/v1/_storage_emulated_0_Android_data_com.fawazapp.blackhole_files_DCIM_blackhole_T1P9E3VMEB.mp4"
+      "name": "Status",
+      "url": "https://vasanth-2025-dot.github.io/status"
     },
     {
-      "name": "Monica Song",
-      "url": "https://github.com/vasanth-2025-dot/video-storage-/releases/download/v1/Monica.-.Video.Song._.COOLIE._.Superstar.Rajinikanth._.Sun.Pictures._.Lokesh._.Anirudh._.Pooja.Hegde.4K_HD.webm"
+      "name": "Documents",
+      "url": "https://vasanth-2025-dot.github.io/documents"
     },
     {
-      "name": "Oorum Dude",
-      "url": "https://github.com/vasanth-2025-dot/video-storage-/releases/download/v1/Oorum.Blood._.Dude._.Pradeep.Ranganathan_.Mamitha._.Sai.Abhyankkar_.Keerthiswaran_Paal.Dabba_.Mythri.1080P_HD.mp4"
+      "name": "Music",
+      "url": "https://vasanth-2025-dot.github.io/music"
     },
     {
-      "name": "Adi Song",
-      "url": "https://github.com/vasanth-2025-dot/video-storage-/releases/download/v1/Adi.Alaye.-.Lyrical._.Parasakthi._.Sivakarthikeyan._.Sreeleela._.Sudha.Kongara._.G.V.Prakash.4K_HD.webm"
+      "name": "Pictures",
+      "url": "https://vasanth-2025-dot.github.io/pictures"
     },
     {
-      "name": "Ethana Saami Song",
-      "url": "https://github.com/vasanth-2025-dot/video-storage-/releases/download/v1/Ethana.Saami.-.Video.Song._.Idli.Kadai._.Dhanush._.Rajkiran._.GV.Prakash.Kumar.4K_HD.webm"
+      "name": "Video songs",
+      "url": "https://vasanth-2025-dot.github.io/vidsong"
     },
     {
-      "name": "Kanmoodi Thirakumbothu Song",
-      "url": "https://github.com/vasanth-2025-dot/video-storage-/releases/download/v1/Kanmoodi.Thirakumbothu.-.4K.Video.Song.5.1._.Sachein.Movie.Songs._.Vijay._.Genelia._.Devi.Sri.Prasad.4K_HD.webm"
-    },
-     {
-      "name": "Kanmoodi Thirakumbothu Song",
-      "url": "https://github.com/vasanth-2025-dot/video-storage-/releases/download/v1/Kanmoodi.Thirakumbothu.-.4K.Video.Song.5.1._.Sachein.Movie.Songs._.Vijay._.Genelia._.Devi.Sri.Prasad.4K_HD.webm"
+      "name": "Live",
+      "url": "https://vasanth-2025-dot.github.io/movie"
     }
-  ]
+     ]
 }
 
 
