@@ -43,7 +43,7 @@ if (window.location.pathname.includes("dashboard.html")) {
         box.className = "file-box";
         box.innerHTML = `
           <h3>${file.name}</h3>
-          <a href="${file.url}" target="_blank">Download</a>
+          <a href="${file.url}" target="_blank">Go</a>
         `;
         container.appendChild(box);
       });
