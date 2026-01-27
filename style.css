@@ -7,7 +7,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background-image: url("https://images.pexels.com/photos/17421370/pexels-photo-17421370.jpeg");
+  background-image: rgba(0,0,0,0.25);
   background-size: cover;
   background-position: center;
 
@@ -66,7 +66,7 @@ button {
 
 /* File Box */
 .file-box {
-  background: rgba(100,0,0,8);
+  background: rgba(10,0,0,0.25);
   padding: 18px;
   border-radius: 16px;
   text-align: center;
