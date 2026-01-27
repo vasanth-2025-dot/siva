@@ -1,5 +1,5 @@
-const ADMIN = { user: "admin", pass: "admin123" };
-const USER  = { user: "user",  pass: "user123" };
+const ADMIN = { user: "001", pass: "001" };
+const USER  = { user: "002",  pass: "002" };
 
 const DATA_URL = "https://vasanth-2025-dot.github.io/siva/data.json";
 
